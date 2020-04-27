@@ -137,7 +137,7 @@ ynh_script_progression --message="Upgrading logrotate configuration..." --time -
 
 # Use logrotate to manage app-specific logfile(s)
 ynh_use_logrotate --non-append
-
+#=================================================
 # UPGRADE FAIL2BAN
 #=================================================
 ynh_script_progression --message="Reconfiguring fail2ban..." --time --weight=1
