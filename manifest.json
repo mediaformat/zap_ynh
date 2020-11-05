@@ -5,7 +5,7 @@
     "description": {
         "en": "A full featured social network app with identity/content mirroring across multiple servers federating over ActivityPub and Zot6 protocols."
     },
-    "version": "20.04.27~ynh1",
+    "version": "20.11.03~ynh1",
     "url": "https://zotlabs.com/zap/",
     "license": "MIT",
     "maintainer": {
