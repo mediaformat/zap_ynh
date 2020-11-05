@@ -224,8 +224,9 @@ chown -R $app: $final_path
 
 # Set up cron job
 ynh_print_info "Setting up cron job..."
-ynh_replace_string  --match_string="YNH_WWW_PATH" --replace_string="$final_path" ..--target_file="/conf/poller-cron"
-ynh_replace_string --match_string="__USER__" --replace_string="$app"  ..--target_file="/conf/poller-cron"
+
+ynh_replace_string  --match_string="YNH_WWW_PATH" --replace_string="$final_path" --target_file="../conf/poller-cron"
+ynh_replace_string --match_string="__USER__" --replace_string="$app"  --target_file="../conf/poller-cron"
 cp ../conf/poller-cron /etc/cron.d/$app 
 
 #=================================================
